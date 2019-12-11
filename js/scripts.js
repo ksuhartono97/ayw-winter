@@ -23,8 +23,8 @@ $( document ).ready(function() {
         dataVal = parseInt(values[i])
         dataPercentage = dataVal * 100 / parseFloat(max[i])
 
-        bar.setAttribute("data-value", dataPercentage)
-        display.innerHTML = dataVal
+        bar.setAttribute("data-value", parseFloat(dataPercentage))
+        display.innerHTML = parseInt(dataVal)
       };
 
       $(".progress").each(function() {
