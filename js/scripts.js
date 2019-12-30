@@ -1,10 +1,10 @@
 $( document ).ready(function() {
   var apiKey = "AIzaSyB-iQu9eZoF5irnM2WijDrd_38rE033Yes";
-  var spreadsheetId = "1ALtcilmyBoKz4mrDKA1R2It0HXY1a_0yskkuYfD24gs";
+  var spreadsheetId = "1YrBitUVlyEfm3xjtfvvkXsBg4EdOstsbOinp7mrQGwM";
   
   const Http = new XMLHttpRequest();
   const url="https://sheets.googleapis.com/v4/spreadsheets/" +
-    spreadsheetId + "/values/Sheet1!M3:N11" + "?key="+apiKey+"&majorDimension=COLUMNS";
+    spreadsheetId + "/values/Sheet1!A2:B10" + "?key="+apiKey+"&majorDimension=COLUMNS";
   
   Http.open("GET", url);
   Http.send();
