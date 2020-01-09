@@ -22,6 +22,7 @@ $( document ).ready(function() {
 
         dataVal = parseInt(values[i])
         dataPercentage = dataVal * 100 / parseFloat(max[i])
+        dataPercentage = Math.min(100.0, dataPercentage)
 
         bar.setAttribute("data-value", parseFloat(dataPercentage))
         display.innerHTML = parseInt(dataVal)
